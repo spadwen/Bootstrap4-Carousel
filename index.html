@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Bootstrap 4 Carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Responsive images*/
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+	  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid orange;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+  </style>
+</head>
+
+<body>
+	
+	<div id="reecedemo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#reecedemo" data-slide-to="0" class="active"></li>
+    <li data-target="#reecedemo" data-slide-to="1"></li>
+    <li data-target="#reecedemo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://www.reecegroup.com.au"><img src="IMG_2109.JPG" alt="St Kilda Beach Volley Ball" width="1100" height="500"></a>
+      <div class="carousel-caption">
+        <h3>St Kilda Beach</h3>
+        <p>Beach Volley Ball!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.reecetech.com.au"><img src="IMG_2243.JPG" alt="St Kilda Beach Sunset" width="1100" height="500"></a>
+      <div class="carousel-caption">
+        <h3>St Kilda Beach</h3>
+        <p>Beach Sunset!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.reecegroup.com.au/news/"><img src="IMG_2314.JPG" alt="Williamstown Beach" width="1100" height="500"></a>
+      <div class="carousel-caption">
+        <h3>Williamstown</h3>
+        <p>Beach Restaurant!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#reecedemo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#reecedemo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</body>
+</html>
